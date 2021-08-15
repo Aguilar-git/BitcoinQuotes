@@ -15,7 +15,7 @@ async function ScheduleJob() {
 
         await db.AddQuotation({
             price: price,
-            date: date
+            date: date.toString()
         });
     }, time);
 
